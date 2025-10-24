@@ -1,5 +1,5 @@
 {% set name = "fast_vindex" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3a1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f904896aad083e07d6a5141e1c43939030edf2b440b9d01725c74065eb5626b8
+  sha256: 06aa9d7ad22c93550f9f9177a4f55d03de77d616c2b1178329e017f0ce770ada
 
 build:
   noarch: python
@@ -23,10 +23,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - dask >=2025.1.0
-    - pandas >=2.2
-    - numpy >=1.26
-    - xarray >=2024.10.0
     - matplotlib-base >=3.8
+    - numpy >=1.26
+    - pandas >=2.2
+    - xarray >=2024.10.0
 
 test:
   imports:
@@ -41,7 +41,7 @@ about:
   home: https://gitlab.ifremer.fr/odatis-public/fast_vindex
   license: LGPL-3.0-or-later
   license_file: LICENSE
-  summary: 'A faster version of Dask’s vindex for advanced indexing with arrays.'
+  summary: "A faster version of Dask's vindex for advanced indexing with arrays."
 
 extra:
   recipe-maintainers:
