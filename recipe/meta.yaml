@@ -1,5 +1,5 @@
 {% set name = "fast_vindex" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a66751f9943151b4f1158f73d6882666d36da037e79596c9b09ed9660d0387b5
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 707eabed6c79558ceb253a96d352ec5693e09184d81c24f64b96598aa75b3a73
 
 build:
   noarch: python
